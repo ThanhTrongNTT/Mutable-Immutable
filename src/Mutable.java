@@ -5,17 +5,21 @@
  * Time     : 15:04
  * Filename : Mutable
  */
+// Khởi tạo class Mutable
 public class Mutable {
     private String name;
     private String address;
     private String birthYear;
 
+    // Tạo Constructor cho Class
     public Mutable(String name, String address, String birthYear) {
         this.name = name;
         this.address = address;
         this.birthYear = birthYear;
     }
 
+
+    // Vì là Mutable nên sẽ có cả hai phương thức get và set
     public String getName() {
         return name;
     }
@@ -41,25 +45,35 @@ public class Mutable {
     }
 }
 
+// Tạo class chứa các ví dụ
 class MutableExercise {
+    // Tạo một function thực thi ví dụ
     public static void Exercise(){
+        
         System.out.println("---Mutable---");
-        Mutable Obj1 = new Mutable("Trong","36/99 Le Thi Hong","2001");
-        Mutable Obj2 = Obj1;
+        // Tạo mới một biến Obj1 kiểu Mutable
+        Mutable obj1 = new Mutable("Trong","36/99 Le Thi Hong","2001");
+        // Tạo một obj2 có giá trị bằng obj1
+        Mutable obj2 = obj1;
+
+        // in obj1 ra màn hình console
         System.out.println(
                 "obj1 element is: "+
-                        "name: "+ Obj1.getName()+"\n"+
-                        "address: "+Obj1.getAddress()+"\n"+
-                        "birthYear: "+Obj1.getBirthYear()+"\n"
+                        "name: "+ obj1.getName()+"\n"+
+                        "address: "+obj1.getAddress()+"\n"+
+                        "birthYear: "+obj1.getBirthYear()+"\n"
         );
-        Obj2.setName("Thanh");
-        Obj2.setAddress("64 Le Duc Tho");
-        Obj2.setName("2002");
+
+        // Bởi vì là một biến Mutable nên obj2 có thể set lại giá trị của mình
+        obj2.setName("Thanh");
+        obj2.setAddress("64 Le Duc Tho");
+        obj2.setName("2002");
+        // in obj2 ra màn hình console
         System.out.println(
                 "obj2 element is: "+
-                        "name: "+ Obj2.getName()+"\n"+
-                        "address: "+Obj2.getAddress()+"\n"+
-                        "birthYear: "+Obj2.getBirthYear()+"\n"
+                        "name: "+ obj2.getName()+"\n"+
+                        "address: "+obj2.getAddress()+"\n"+
+                        "birthYear: "+obj2.getBirthYear()+"\n"
         );
     }
 }
