@@ -8,8 +8,8 @@
 public class Main {
     public static void main(String[] args) {
         // Chạy các ví dụ
-        MutableExercise.Exercise();
-        ImmutableExercise.Exercise();
+        MutableExercise.exercise();
+        ImmutableExercise.exercise();
 
     }
 }

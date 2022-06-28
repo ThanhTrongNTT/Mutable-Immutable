@@ -48,32 +48,32 @@ public class Mutable {
 // Tạo class chứa các ví dụ
 class MutableExercise {
     // Tạo một function thực thi ví dụ
-    public static void Exercise(){
+    public static void exercise(){
         
         System.out.println("---Mutable---");
         // Tạo mới một biến Obj1 kiểu Mutable
-        Mutable obj1 = new Mutable("Trong","36/99 Le Thi Hong","2001");
+        Mutable student1= new Mutable("Trong","36/99 Le Thi Hong","2001");
         // Tạo một obj2 có giá trị bằng obj1
-        Mutable obj2 = obj1;
+        Mutable student2 = student1;
 
         // in obj1 ra màn hình console
         System.out.println(
                 "obj1 element is: "+
-                        "name: "+ obj1.getName()+"\n"+
-                        "address: "+obj1.getAddress()+"\n"+
-                        "birthYear: "+obj1.getBirthYear()+"\n"
+                        "name: "+ student1.getName()+"\n"+
+                        "address: "+student1.getAddress()+"\n"+
+                        "birthYear: "+student1.getBirthYear()+"\n"
         );
 
         // Bởi vì là một biến Mutable nên obj2 có thể set lại giá trị của mình
-        obj2.setName("Thanh");
-        obj2.setAddress("64 Le Duc Tho");
-        obj2.setName("2002");
+        student2.setName("Thanh");
+        student2.setAddress("64 Le Duc Tho");
+        student2.setName("2002");
         // in obj2 ra màn hình console
         System.out.println(
                 "obj2 element is: "+
-                        "name: "+ obj2.getName()+"\n"+
-                        "address: "+obj2.getAddress()+"\n"+
-                        "birthYear: "+obj2.getBirthYear()+"\n"
+                        "name: "+ student2.getName()+"\n"+
+                        "address: "+student2.getAddress()+"\n"+
+                        "birthYear: "+student2.getBirthYear()+"\n"
         );
     }
 }

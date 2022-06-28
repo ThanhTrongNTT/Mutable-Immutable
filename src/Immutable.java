@@ -35,23 +35,23 @@ public class Immutable {
 // Khởi tạo class để ví dụ
 class ImmutableExercise{
     // Tạo một function để chạy ví dụ
-    public static void Exercise(){
+    public static void exercise(){
 
         // Vì là Immutable nên chỉ gán được giá trị lúc tạo và không được sửa đổi trong suốt quá trình tương tác với biến
         System.out.println("---Immutable---");
-        Immutable obj1 = new Immutable("Trong","36/99 Le Thi Hong","2001");
-        Immutable obj2 = new Immutable("Thanh","64 Le Duc Tho","2002");
+        Immutable student1 = new Immutable("Trong","36/99 Le Thi Hong","2001");
+        Immutable student2 = new Immutable("Thanh","64 Le Duc Tho","2002");
         System.out.println(
                 "obj1 element is: "+
-                        "name: "+ obj1.getName()+"\n"+
-                        "address: "+obj1.getAddress()+"\n"+
-                        "birthYear: "+obj1.getBirthYear()+"\n"
+                        "name: "+ student1.getName()+"\n"+
+                        "address: "+student1.getAddress()+"\n"+
+                        "birthYear: "+student1.getBirthYear()+"\n"
         );
         System.out.println(
                 "obj2 element is: "+
-                        "name: "+ obj2.getName()+"\n"+
-                        "address: "+obj2.getAddress()+"\n"+
-                        "birthYear: "+obj2.getBirthYear()+"\n"
+                        "name: "+ student2.getName()+"\n"+
+                        "address: "+student2.getAddress()+"\n"+
+                        "birthYear: "+student2.getBirthYear()+"\n"
         );
     }
 }
